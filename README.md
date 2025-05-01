@@ -204,7 +204,3 @@ For in-depth theoretical background and implementation details, see the [PROJECT
 MIT
 
 ---
-
-<p align="center">
-  <em>Developed by [Your Name] | Connect with me on <a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a></em>
-</p> 
