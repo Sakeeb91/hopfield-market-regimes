@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  market-regime-classifier:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./models:/app/models
+    command: >
+      --ticker SPY
+      --period 2y
+      --interval 1d
+      --save-model
+  
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./models:/app/models
+      - ./notebooks:/app/notebooks
+    command: >
+      jupyter notebook
+      --ip=0.0.0.0
+      --port=8888
+      --allow-root
+      --no-browser
+      --NotebookApp.token=''
+      --NotebookApp.password='' 
