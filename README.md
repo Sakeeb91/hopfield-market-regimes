@@ -71,7 +71,7 @@ Hopfield networks excel at pattern recognition and noise filtering, making them 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hopfield-market-regimes.git
+git clone https://github.com/Sakeeb91/hopfield-market-regimes.git
 cd hopfield-market-regimes
 
 # Create a virtual environment
