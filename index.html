@@ -42,6 +42,52 @@
             padding: 0 20px;
         }
 
+        /* Navigation */
+        .nav {
+            background: #fff;
+            border-bottom: 1px solid #000;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-home {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-home:hover {
+            text-decoration: underline;
+        }
+
+        .nav-portfolio {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-portfolio:hover {
+            text-decoration: underline;
+        }
+
+        .nav-project {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
         /* Header */
         .header {
             padding: 80px 0;
@@ -214,6 +260,15 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="https://sakeeb91.github.io/" class="nav-portfolio">← BACK TO PORTFOLIO</a>
+            <a href="https://sakeeb91.github.io/" class="nav-home">SHAFKAT RAHMAN</a>
+            <span class="nav-project">HOPFIELD MARKET REGIMES</span>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
